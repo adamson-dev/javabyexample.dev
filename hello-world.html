@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Java by Example: Hello World</title>
+    <!-- <link rel=stylesheet href="site.css"> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+    <div class="container" style="width: 900px; margin-left: auto; margin-right: auto;">
+        <h2>Java by Example: Hello World</h2>
+        <div style="float: left;width: 50%;">
+            <p>In Java, every application begins with a class definition. In the program, HelloWorld is the name of the class, and the class definition is: </p>
+            <p>This is the main method. Every application in Java must contain the main method. The Java compiler starts executing the code from the main method.</p>
+            <p>The code above is a print statement. It prints the text Hello, World! to standard output (your screen). The text inside the quotation marks is called String in Java.</p>
+            <p>To run the program, put the code in HelloWorld.java and use java HelloWorld.java.</p>
+        </div>
+        <div style="float: left; width: 50%;">
+            <p>Source Code</p>
+            <pre>
+                <code class="language-java">
+package dev.adamson;
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+                </code>
+            </pre>
+            <p>Output</p>
+            <pre>
+                <code class="language-bash">
+$ java HelloWorld.java
+Hello World!
+                </code>
+            </pre>
+        </div>
+        <div style="overflow: auto;"></div>
+        <p class="footer">
+            by <a href="https://adamson.dev">Liam Adamson</a> and <a href="https://dmt.dev">David Mouat Thomson</a> | <a href="https://github.com/adamson-dev/javabyexample.dev">source</a> | <a href="https://github.com/adamson-dev/javabyexample.dev#license">license</a>
+          </p>
+    </div>
+
+</body>
+
+</html>
