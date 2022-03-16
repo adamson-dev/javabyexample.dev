@@ -1,0 +1,30 @@
+<head>
+    <title>Java by Example: {{title}}</title>
+</head>
+
+<app-header title={{title}}></app-header>
+
+<div class="columns">
+    <div class="column">
+        <ul>
+            <ul>
+                <li *ngFor="let comment of codeComments">{{comment}}</li>
+            </ul>
+        </ul>
+        <ul>
+            <ul>
+                <li *ngFor="let comment of outputComments">{{comment}}</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="column">
+        <p>Source Code</p>
+        <pre>
+            <code [highlight]="code" [languages]="['java']"></code>
+        </pre>
+        <p>Output</p>
+        <pre>
+            <code [highlight]="output" [languages]="['bash']"></code>
+        </pre>
+    </div>
+</div>
